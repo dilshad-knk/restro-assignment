@@ -10,6 +10,7 @@ const Protect: React.FC<ProtectProps> = ({ children }) => {
 
   return (
     <>
+    
       {isAuthenticated ? (
         <>{children}</>  
       ) : (

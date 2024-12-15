@@ -18,10 +18,14 @@ const SignIn: React.FC<SigninProps> = ({ onSuccess }) => {
     
    
     try {
-      instance.post("/admin-validation",{username,password})
+       const response = await instance.post("/admin-validation", { username, password });
 
+  
+       console.log(response)
+    if (response.status === 200) {
      
       onSuccess()
+    }
         
     } catch (error) {
       console.log(error)

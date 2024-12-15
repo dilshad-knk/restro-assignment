@@ -15,10 +15,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/admin-page',
-    element: <Protect><AdminMenu/></Protect>
+    element:( <Protect><AdminMenu/></Protect>)
   }
 ]);
 
+// Render the application
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <RouterProvider router={router} />
