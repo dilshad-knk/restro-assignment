@@ -11,7 +11,7 @@ const app: Application = express();
 
 app.use(cors({
     credentials: true ,
-    origin: "http://localhost:5173"
+    origin: "https://restro-assignment.vercel.app"
 }));
 app.use(bodyParser.json());
 

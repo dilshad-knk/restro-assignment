@@ -69,10 +69,10 @@ export const adminValidation = async (req: Request, res: Response):Promise<any> 
 
 
     const cookieParams: CookieOptions = {
-      // httpOnly: true,
-      // secure: false,
-      // sameSite: "none" as "none",
-      // path: '/', 
+      httpOnly: true,
+      secure: true,
+      sameSite: "none" as "none",
+      path: '/', 
 
     };
 
