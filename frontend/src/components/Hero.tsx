@@ -1,4 +1,3 @@
-import React from 'react'
 import bg from '../../public/hero.jpeg'
 
 const Hero = () => {

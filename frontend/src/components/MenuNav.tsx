@@ -1,4 +1,3 @@
-import React from 'react';
 import bg from "../../public/bg-banner-arts.png";
 
 export interface MenuSection {

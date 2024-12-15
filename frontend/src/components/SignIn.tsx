@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import instance from '../axios/axios';
-import { useNavigate } from 'react-router-dom';
+
 
 interface SigninProps {
   onSuccess: () => void;
@@ -11,14 +11,14 @@ const SignIn: React.FC<SigninProps> = ({ onSuccess }) => {
   const [username, setusername] = useState('');
   const [error, setError] = useState('');
 
-  const navigate = useNavigate()
+
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
    
     try {
-       const result = instance.post("/admin-validation",{username,password})
+      instance.post("/admin-validation",{username,password})
 
      
       onSuccess()
