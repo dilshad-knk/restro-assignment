@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.py-section {
+  @apply py-12 sm:py-16 md:py-20 lg:py-24;
+}
+
+.px-section {
+  @apply px-4 sm:px-6 md:px-12 lg:px-32;
+}
