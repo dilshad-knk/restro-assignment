@@ -6,6 +6,8 @@ import MenuNav from "./components/MenuNav"
 
 import { MenuSection } from "./components/MenuNav"
 import MenuContent from "./components/MenuContent"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 function App() {
   const [menuSections, setMenuSections] = useState<MenuSection[]>([])
@@ -50,6 +52,8 @@ function App() {
         setActiveSection={setActiveSection} 
       />
       <MenuContent activeSection={activeSection}/>
+      <Contact/>
+      <Footer/>
    </div>
     </>
   )

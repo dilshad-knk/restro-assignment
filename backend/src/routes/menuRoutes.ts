@@ -5,12 +5,12 @@ import { verify } from "../middleware/authMiddleware";
 const router: Router = express.Router();
 
 
-router.post("/menus", createMenu);
+router.post("/menus",verify, createMenu);
 router.get("/menus", getMenus);
 router.get("/menus/:id", getMenuById);
 router.post("/admin-validation", adminValidation);
-router.put("/menus/:id", updateMenu);
-router.delete("/menus/:id", deleteMenu);
+router.put("/menus/:id",verify, updateMenu);
+router.delete("/menus/:id",verify, deleteMenu);
 
 
 
